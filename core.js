@@ -59,5 +59,6 @@ function check(q,value){const s=String(value).trim();if(!/^\d+$/.test(s))return 
 const stats=a=>({correct:a.questions.filter(q=>q.done&&q.correct).length,failed:a.questions.filter(q=>q.done&&!q.correct).length,done:a.questions.filter(q=>q.done).length,points:a.questions.reduce((s,q)=>s+q.points,0),hints:a.questions.reduce((s,q)=>s+q.hintsUsed,0)});
 // Reconstrueix la notació de les explicacions antigues a partir de la fórmula original.
 function explanation(q){const marker=' té exponent ',at=q.explanation.indexOf(marker);if(at<0)return q.explanation;const original=q.expression.split('=')[0].trim().replace(/<sup>/g,'^').replace(/<\/sup>/g,'');return original+q.explanation.slice(at);}
-const api={rooms,question,generate,check,stats,explanation};root.Ocean=api;if(typeof module!=='undefined')module.exports=api;
+function validStudentName(value){if(typeof value!=='string')return false;const name=value.trim().replace(/\s+/g,' ');return name.length<=100&&/^[\p{L}\p{M}\s'’·.-]+$/u.test(name)&&name.split(' ').length>=2&&name.split(' ').every(part=>/\p{L}/u.test(part));}
+const api={rooms,question,generate,check,stats,explanation,validStudentName};root.Ocean=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

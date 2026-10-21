@@ -1,5 +1,6 @@
 /* PDF local, sense dependències ni comunicació amb serveis externs. */
 window.OceanPDF={download(db){
+if(!Ocean.validStudentName(db.name))return;
 const text=s=>String(s).replace(/<sup>/g,'^').replace(/<\/sup>/g,'').replace(/[−–—]/g,'-').replace(/[’‘]/g,"'").replace(/…/g,'...').replace(/[✓✦]/g,'').replace(/×/g,'x');
 const lines=['OCEÀNIA - INFORME DE PROGRÉS','Potències amb nombres naturals - 1r d\'ESO','Alumne/a: '+db.name,'Data de l\'informe: '+new Date().toLocaleString('ca-ES'),'Criteri de victòria: 8 proves superades de 10.','Punts per prova: 10 sense ajudes; 7 amb una; 4 amb dues; 0 no superada.',''];
 const completed=db.attempts.filter(a=>a.finished),won=new Set(completed.filter(a=>Ocean.stats(a).correct>=8).map(a=>a.room));lines.push(`Missions superades: ${won.size}/5. Intents completats: ${completed.length}.`,'','RESUM PER CONTINGUT');
