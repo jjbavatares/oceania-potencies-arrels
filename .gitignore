@@ -1,0 +1,8 @@
+.env
+.env.*
+qa/
+node_modules/
+oceania-progres*.json
+informe-oceania*.pdf
+*.zip
+.DS_Store

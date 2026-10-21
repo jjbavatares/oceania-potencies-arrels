@@ -1,0 +1,44 @@
+OCEÀNIA - POTÈNCIES I ARRELS (1r d'ESO)
+
+OBRIR L'APLICACIÓ
+Obre index.html amb Vivaldi o un altre navegador actual.
+No necessita instal·lació, connexió a Internet ni servidor.
+Mantén els fitxers i la carpeta assets junts.
+
+PROGRÉS
+Es desa automàticament al navegador després de cada resposta.
+Torna a obrir el mateix index.html al mateix navegador per continuar.
+El temps només compta mentre la partida és visible, sense penalització.
+Abans de moure la carpeta o esborrar dades del navegador, exporta
+el progrés des d'El meu progrés. Importa la còpia per recuperar-lo.
+El PDF és un informe; la còpia JSON permet reprendre les partides.
+Evita el mode privat si vols conservar l'historial.
+
+MISSIONS
+1. El rescat de la sirena: definició, base, exponent, càlcul i potències de 10.
+2. El tresor del vaixell enfonsat: producte de potències de la mateixa base.
+3. Les portes d'Atlàntida: quocient de potències i exponent zero.
+4. El submarí avariat: potència de potència, fins a tres nivells.
+5. El far de les profunditats: repàs combinat i errors habituals.
+
+Cada missió té 10 proves i es supera amb almenys 8 encerts.
+Es completen sempre les 10 proves. Cal acabar les deu proves de la missió anterior
+per accedir a la següent. Les repeticions generen proves noves i
+tots els intents es conserven a l'informe.
+
+3 intents per prova; ajudes després del primer i del segon error.
+També es poden demanar abans. Puntuació per prova:
+10 punts sense ajudes, 7 amb una, 4 amb dues, 0 si no se supera.
+Al tercer error apareix la solució explicada.
+
+SO I IMATGES
+Efectes sintetitzats localment. Control de silenci a la capçalera
+i control de volum a El meu progrés.
+19 il·lustracions originals optimitzades, a més del logo institucional.
+Les animacions respecten la preferència de moviment reduït del sistema.
+
+PRIVACITAT
+Sense analítica, comptes ni serveis externs. Les dades no s'envien.
+L'enllaç jjbavatares.com només s'obre si l'usuari hi fa clic.
+
+Les arrels encara no estan implementades. 
